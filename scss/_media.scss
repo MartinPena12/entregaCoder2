@@ -1,42 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
-
 .text-center{
     text-align: center;
 }
-
-
-
-
-
-nav{
-    background-color: black;
-    font-family: 'Open Sans', sans-serif;
-    text-decoration: none;
-    color: white;
-    ;
-}
-
-h2,
-h3{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    color: $headColor;
-    text-decoration: underline;
-    
-
-}
-
-h1{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    color: $headColor;
-    text-decoration: underline;
-}
-   
-
-
-
-
 
 
 .foto-productos{
@@ -78,7 +42,20 @@ h1{
 
     }
 
+    @keyframes scale {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
     .logo{
+        animation: scale 2s ease-in-out infinite;
         width: auto;
         height: 100px;
 
@@ -100,16 +77,21 @@ h1{
 
     }
 
-    .footer-images{
-        width: 40px;
-        height: 40px;
-        
-    }
+    
 
-    .footer-background{
-        background-color: black;
-    }
-
+   
     .card-title{
         font-size: 16px;
+    }
+
+    footer{
+        background-color: white;
+        a{
+            text-decoration: none;
+            img{
+                width: 40px;
+                height: 40px;
+
+            }
+        }
     }
