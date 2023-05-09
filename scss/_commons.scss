@@ -1,18 +1,18 @@
-h2,
-h3{
+%heading {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     color: $headColor;
     text-decoration: underline;
-    
-
 }
 
-h1{
-    font-family: 'Open Sans', sans-serif;
+h2,
+h3 {
+    @extend %heading;
+}
+
+h1 {
+    @extend %heading;
     font-size: 30px;
-    color: $headColor;
-    text-decoration: underline;
 }
 
 nav{
@@ -20,6 +20,5 @@ nav{
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: $headColor;
-    ;
 }
 
